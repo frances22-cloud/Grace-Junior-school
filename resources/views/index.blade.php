@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduManage Pro | School Management System</title>
+    <title>Grace Junior | School Management System</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Global Styles */
         :root {
             --primary: #4a6fa5;
             --secondary: #166088;
@@ -17,47 +19,75 @@
             --warning: #ffc107;
             --danger: #dc3545;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             line-height: 1.6;
             color: var(--dark);
             background-color: var(--light);
         }
-        
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
+        .hero {
+    background: url("{{ asset('images/structure.jpeg') }}") no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+/* Optional: dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Keep text above overlay */
+}
+
         section {
             padding: 80px 0;
         }
-        
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             margin-bottom: 20px;
             line-height: 1.2;
         }
-        
+
         h1 {
             font-size: 2.5rem;
         }
-        
+
         h2 {
             font-size: 2rem;
             text-align: center;
             margin-bottom: 50px;
             position: relative;
         }
-        
+
         h2::after {
             content: '';
             position: absolute;
@@ -69,11 +99,11 @@
             background: var(--accent);
             border-radius: 2px;
         }
-        
+
         p {
             margin-bottom: 15px;
         }
-        
+
         .btn {
             display: inline-block;
             padding: 12px 30px;
@@ -86,24 +116,24 @@
             border: none;
             cursor: pointer;
         }
-        
+
         .btn:hover {
             background: var(--secondary);
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .btn-outline {
             background: transparent;
             border: 2px solid white;
             margin-left: 15px;
         }
-        
+
         .btn-outline:hover {
             background: white;
             color: var(--primary);
         }
-        
+
         /* Header & Navigation */
         header {
             position: fixed;
@@ -115,55 +145,55 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         header.scrolled {
             padding: 10px 0;
             background: rgba(255, 255, 255, 0.95);
         }
-        
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 0;
         }
-        
+
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
         }
-        
+
         .logo span {
             color: var(--secondary);
         }
-        
+
         .nav-links {
             display: flex;
             list-style: none;
         }
-        
+
         .nav-links li {
             margin-left: 30px;
         }
-        
+
         .nav-links a {
             color: var(--dark);
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
         }
-        
+
         .nav-links a:hover {
             color: var(--primary);
         }
-        
+
         .hamburger {
             display: none;
             cursor: pointer;
         }
-        
+
         /* Hero Section */
         .hero {
             height: 100vh;
@@ -173,40 +203,40 @@
             align-items: center;
             text-align: center;
         }
-        
+
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
             animation: fadeInDown 1s ease;
         }
-        
+
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
             animation: fadeInUp 1s ease;
         }
-        
+
         .hero-btns {
             animation: fadeIn 1.5s ease;
         }
-        
+
         /* User Roles Section */
         .roles {
             background: white;
         }
-        
+
         .roles-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
-        
+
         .role-card {
             background: white;
             border-radius: 10px;
@@ -215,28 +245,28 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
         .role-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
-        
+
         .role-icon {
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 20px;
         }
-        
+
         .role-card h3 {
             font-size: 1.5rem;
             color: var(--secondary);
         }
-        
+
         /* Subjects Section */
         .subjects {
             background: #f1f5f9;
         }
-        
+
         .subjects-container {
             display: flex;
             flex-wrap: wrap;
@@ -244,7 +274,7 @@
             gap: 20px;
             margin-top: 50px;
         }
-        
+
         .subject-card {
             background: white;
             border-radius: 10px;
@@ -258,62 +288,63 @@
             transition: all 0.3s ease;
             cursor: pointer;
         }
-        
+
         .subject-card:hover {
             transform: scale(1.1);
             background: var(--primary);
             color: white;
         }
-        
+
         .subject-card:hover .subject-icon {
             color: white;
         }
-        
+
         .subject-icon {
             font-size: 2.5rem;
             color: var(--primary);
             margin-bottom: 15px;
             transition: all 0.3s ease;
         }
-        
+
         /* Timetable Section */
         .timetable {
             background: white;
         }
-        
+
         .timetable-container {
             overflow-x: auto;
             margin-top: 50px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
             min-width: 600px;
         }
-        
-        th, td {
+
+        th,
+        td {
             padding: 15px;
             text-align: center;
             border: 1px solid #ddd;
         }
-        
+
         th {
             background: var(--primary);
             color: white;
             font-weight: 600;
         }
-        
+
         tr:nth-child(even) {
             background: #f8f9fa;
         }
-        
+
         .period {
             position: relative;
         }
-        
+
         .period-details {
             display: none;
             position: absolute;
@@ -328,77 +359,77 @@
             z-index: 10;
             font-size: 0.9rem;
         }
-        
+
         .period:hover .period-details {
             display: block;
         }
-        
+
         /* Exams Section */
         .exams {
             background: #f1f5f9;
         }
-        
+
         .exams-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
-        
+
         .exam-card {
             background: white;
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .exam-card h3 {
             color: var(--secondary);
             margin-bottom: 15px;
             display: flex;
             align-items: center;
         }
-        
+
         .exam-icon {
             margin-right: 10px;
             color: var(--primary);
         }
-        
+
         .calendar {
             margin-top: 30px;
         }
-        
+
         .calendar-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .calendar-grid {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             gap: 5px;
         }
-        
+
         .calendar-day {
             text-align: center;
             padding: 10px;
             background: #f8f9fa;
             border-radius: 5px;
         }
-        
+
         .calendar-day.active {
             background: var(--primary);
             color: white;
             font-weight: bold;
         }
-        
+
         /* Marks Section */
         .marks {
             background: white;
         }
-        
+
         .chart-container {
             width: 100%;
             max-width: 800px;
@@ -408,7 +439,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .chart-placeholder {
             width: 100%;
             height: 400px;
@@ -419,7 +450,7 @@
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        
+
         .filters {
             display: flex;
             justify-content: center;
@@ -427,7 +458,7 @@
             margin-bottom: 30px;
             flex-wrap: wrap;
         }
-        
+
         .filter-btn {
             padding: 8px 20px;
             background: #f1f5f9;
@@ -436,49 +467,50 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .filter-btn.active {
             background: var(--primary);
             color: white;
         }
-        
+
         /* Footer */
         footer {
             background: var(--dark);
             color: white;
             padding: 60px 0 20px;
         }
-        
+
         .footer-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
             margin-bottom: 40px;
         }
-        
+
         .footer-col h3 {
             color: white;
             margin-bottom: 25px;
             font-size: 1.3rem;
         }
-        
-        .footer-col p, .footer-col a {
+
+        .footer-col p,
+        .footer-col a {
             color: #adb5bd;
             margin-bottom: 15px;
             display: block;
             text-decoration: none;
             transition: color 0.3s ease;
         }
-        
+
         .footer-col a:hover {
             color: white;
         }
-        
+
         .social-links {
             display: flex;
             gap: 15px;
         }
-        
+
         .social-links a {
             display: inline-flex;
             align-items: center;
@@ -490,12 +522,12 @@
             color: white;
             transition: all 0.3s ease;
         }
-        
+
         .social-links a:hover {
             background: var(--primary);
             transform: translateY(-3px);
         }
-        
+
         .copyright {
             text-align: center;
             padding-top: 20px;
@@ -503,50 +535,57 @@
             color: #adb5bd;
             font-size: 0.9rem;
         }
-        
+
         /* Animations */
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
-        
+
         @keyframes fadeInDown {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         /* Responsive Styles */
         @media (max-width: 992px) {
             h1 {
                 font-size: 2.2rem;
             }
-            
+
             h2 {
                 font-size: 1.8rem;
             }
-            
+
             section {
                 padding: 60px 0;
             }
         }
-        
+
         @media (max-width: 768px) {
             .nav-links {
                 position: fixed;
@@ -560,63 +599,67 @@
                 padding: 40px 0;
                 transition: all 0.5s ease;
             }
-            
+
             .nav-links.active {
                 left: 0;
             }
-            
+
             .nav-links li {
                 margin: 15px 0;
             }
-            
+
             .hamburger {
                 display: block;
             }
-            
+
             .hero h1 {
                 font-size: 2.5rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
             .btn {
                 padding: 10px 20px;
             }
         }
-        
+
         @media (max-width: 576px) {
             h1 {
                 font-size: 2rem;
             }
-            
+
             h2 {
                 font-size: 1.5rem;
             }
-            
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
             .hero-btns {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             .btn-outline {
                 margin-left: 0;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header id="header">
         <div class="container">
             <nav>
-                <a href="#" class="logo">Edu<span>Manage</span> Pro</a>
+                <a href="#" class="logo">
+                    <img src="{{ asset('images/logo.jpg') }}" alt="Grace Junir School"
+                        style="max-height: 60px; max-width: 100%; height: auto; width: auto; object-fit: contain;">
+                </a>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#roles">User Roles</a></li>
@@ -637,7 +680,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Streamline Your School Management</h1>
-                <p>EduManage Pro is a comprehensive solution designed to simplify school administration, enhance teaching, and improve student learning experiences.</p>
+                <p>EduManage Pro is a comprehensive solution designed to simplify school administration, enhance
+                    teaching, and improve student learning experiences.</p>
                 <div class="hero-btns">
                     <a href="#" class="btn">Get Started</a>
                     <a href="/admin" class="btn btn-outline">Login</a>
@@ -663,7 +707,8 @@
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
                     <h3>Teacher</h3>
-                    <p>Create lesson plans, record attendance, input grades, and communicate with students and parents.</p>
+                    <p>Create lesson plans, record attendance, input grades, and communicate with students and parents.
+                    </p>
                 </div>
                 <div class="role-card">
                     <div class="role-icon">
@@ -905,10 +950,12 @@
             <div class="exams-container">
                 <div class="exam-card">
                     <h3><i class="fas fa-calendar-check exam-icon"></i> Mid-Term Exams</h3>
-                    <p>Mid-term exams assess student progress halfway through the semester. These exams cover all material taught up to that point.</p>
+                    <p>Mid-term exams assess student progress halfway through the semester. These exams cover all
+                        material taught up to that point.</p>
                     <p><strong>Date Range:</strong> October 15 - October 19, 2023</p>
-                    <p><strong>Preparation Tips:</strong> Review all lecture notes, complete practice problems, and attend review sessions.</p>
-                    
+                    <p><strong>Preparation Tips:</strong> Review all lecture notes, complete practice problems, and
+                        attend review sessions.</p>
+
                     <div class="calendar">
                         <div class="calendar-header">
                             <h4>October 2023</h4>
@@ -921,7 +968,7 @@
                             <div class="calendar-day">Thu</div>
                             <div class="calendar-day">Fri</div>
                             <div class="calendar-day">Sat</div>
-                            
+
                             <!-- Empty days -->
                             <div class="calendar-day"></div>
                             <div class="calendar-day"></div>
@@ -930,7 +977,7 @@
                             <div class="calendar-day"></div>
                             <div class="calendar-day"></div>
                             <div class="calendar-day">1</div>
-                            
+
                             <div class="calendar-day">2</div>
                             <div class="calendar-day">3</div>
                             <div class="calendar-day">4</div>
@@ -938,7 +985,7 @@
                             <div class="calendar-day">6</div>
                             <div class="calendar-day">7</div>
                             <div class="calendar-day">8</div>
-                            
+
                             <div class="calendar-day">9</div>
                             <div class="calendar-day">10</div>
                             <div class="calendar-day">11</div>
@@ -946,7 +993,7 @@
                             <div class="calendar-day">13</div>
                             <div class="calendar-day">14</div>
                             <div class="calendar-day">15</div>
-                            
+
                             <div class="calendar-day active">16</div>
                             <div class="calendar-day active">17</div>
                             <div class="calendar-day active">18</div>
@@ -954,7 +1001,7 @@
                             <div class="calendar-day">20</div>
                             <div class="calendar-day">21</div>
                             <div class="calendar-day">22</div>
-                            
+
                             <div class="calendar-day">23</div>
                             <div class="calendar-day">24</div>
                             <div class="calendar-day">25</div>
@@ -962,7 +1009,7 @@
                             <div class="calendar-day">27</div>
                             <div class="calendar-day">28</div>
                             <div class="calendar-day">29</div>
-                            
+
                             <div class="calendar-day">30</div>
                             <div class="calendar-day">31</div>
                         </div>
@@ -972,8 +1019,9 @@
                     <h3><i class="fas fa-graduation-cap exam-icon"></i> Final Exams</h3>
                     <p>Final exams comprehensively assess all material covered throughout the entire semester.</p>
                     <p><strong>Date Range:</strong> December 10 - December 15, 2023</p>
-                    <p><strong>Preparation Tips:</strong> Create a study schedule, form study groups, and utilize all available resources.</p>
-                    
+                    <p><strong>Preparation Tips:</strong> Create a study schedule, form study groups, and utilize all
+                        available resources.</p>
+
                     <div class="calendar">
                         <div class="calendar-header">
                             <h4>December 2023</h4>
@@ -986,7 +1034,7 @@
                             <div class="calendar-day">Thu</div>
                             <div class="calendar-day">Fri</div>
                             <div class="calendar-day">Sat</div>
-                            
+
                             <!-- Empty days -->
                             <div class="calendar-day"></div>
                             <div class="calendar-day"></div>
@@ -995,7 +1043,7 @@
                             <div class="calendar-day">1</div>
                             <div class="calendar-day">2</div>
                             <div class="calendar-day">3</div>
-                            
+
                             <div class="calendar-day">4</div>
                             <div class="calendar-day">5</div>
                             <div class="calendar-day">6</div>
@@ -1003,7 +1051,7 @@
                             <div class="calendar-day">8</div>
                             <div class="calendar-day">9</div>
                             <div class="calendar-day active">10</div>
-                            
+
                             <div class="calendar-day active">11</div>
                             <div class="calendar-day active">12</div>
                             <div class="calendar-day active">13</div>
@@ -1011,7 +1059,7 @@
                             <div class="calendar-day active">15</div>
                             <div class="calendar-day">16</div>
                             <div class="calendar-day">17</div>
-                            
+
                             <div class="calendar-day">18</div>
                             <div class="calendar-day">19</div>
                             <div class="calendar-day">20</div>
@@ -1019,7 +1067,7 @@
                             <div class="calendar-day">22</div>
                             <div class="calendar-day">23</div>
                             <div class="calendar-day">24</div>
-                            
+
                             <div class="calendar-day">25</div>
                             <div class="calendar-day">26</div>
                             <div class="calendar-day">27</div>
@@ -1049,7 +1097,8 @@
                 <div class="chart-placeholder">
                     <p>Interactive Performance Chart Will Appear Here</p>
                 </div>
-                <p>Track student progress over time with our comprehensive analytics dashboard. View trends, identify areas for improvement, and celebrate successes.</p>
+                <p>Track student progress over time with our comprehensive analytics dashboard. View trends, identify
+                    areas for improvement, and celebrate successes.</p>
             </div>
         </div>
     </section>
@@ -1094,7 +1143,7 @@
         // Mobile Navigation Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
-        
+
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
@@ -1119,10 +1168,10 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
@@ -1138,7 +1187,7 @@
             button.addEventListener('click', () => {
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
+
                 // Here you would typically update the chart based on the selected filter
                 // For demonstration, we'll just log the selected filter
                 console.log(`Filter selected: ${button.textContent}`);
@@ -1147,7 +1196,7 @@
 
         // Simple Chart Simulation (would be replaced with a real chart library in production)
         const chartPlaceholder = document.querySelector('.chart-placeholder');
-        
+
         // This is just a placeholder - in a real app you would use Chart.js, D3.js, etc.
         function simulateChart() {
             chartPlaceholder.innerHTML = `
@@ -1187,11 +1236,11 @@
         // Animation on Scroll
         function animateOnScroll() {
             const elements = document.querySelectorAll('.role-card, .subject-card, .exam-card');
-            
+
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.2;
-                
+
                 if (elementPosition < screenPosition) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
@@ -1219,7 +1268,9 @@
         });
 
         // Current year for copyright
-        document.querySelector('.copyright').innerHTML = `&copy; ${new Date().getFullYear()} EduManage Pro. All rights reserved.`;
+        document.querySelector('.copyright').innerHTML =
+            `&copy; ${new Date().getFullYear()} EduManage Pro. All rights reserved.`;
     </script>
 </body>
+
 </html>
