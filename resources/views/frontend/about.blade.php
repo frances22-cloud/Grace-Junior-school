@@ -9,22 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ url('frontend/css/open-iconic-bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url('frontend/css/animate.css') }}">
+    <link rel="stylesheet" href={{ asset('frontend/css/open-iconic-bootstrap.min.css') }}>
+    <link rel="stylesheet" href={{ asset('frontend/css/animate.css') }}>
 
     <link rel="icon" type="image/x-icon" href="{{ asset('frontend/images/favicon.ico') }}">
 
-    <link rel="stylesheet" href="{{ url('frontend/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ url('frontend/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ url('frontend/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href={{ asset('frontend/css/owl.carousel.min.css') }}>
+    <link rel="stylesheet" href={{ asset('frontend/css/owl.theme.default.min.css') }}>
+    <link rel="stylesheet" href={{ asset('frontend/css/magnific-popup.css') }}>
 
-    <link rel="stylesheet" href="{{ url('frontend/css/aos.css') }}">
+    <link rel="stylesheet" href={{ asset('frontend/css/aos.css') }}>
 
-    <link rel="stylesheet" href="{{ url('frontend/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href={{ asset('frontend/css/ionicons.min.css') }}>
 
-    <link rel="stylesheet" href="{{ url('frontend/css/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ url('frontend/css/icomoon.css') }}">
-    <link rel="stylesheet" href="{{ url('frontend/css/style.css') }}">
+    <link rel="stylesheet" href={{ asset('frontend/css/flaticon.css') }}>
+    <link rel="stylesheet" href={{ asset('frontend/css/icomoon.css') }}>
+    <link rel="stylesheet" href={{ asset('frontend/css/style.css') }}>
 </head>
 
 <body>
@@ -46,14 +46,13 @@
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-phone2"></span></div>
-                            <span class="text">+256782996567/+256788625005</span>
+                            <span class="text">+256 782996567/+256788625005</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
         <div class="container d-flex align-items-center">
             <a class="navbar-brand" href="{{ url('home') }}">
@@ -63,99 +62,29 @@
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
+            <!-- <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p> -->
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="{{ url('home') }}" class="nav-link pl-0">Home</a></li>
-                        <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="{{ url('teachers') }}" class="nav-link">Events and Activities</a>
-                        </li>
-                        <li class="nav-item"><a href="{{ url('courses') }}" class="nav-link">Academics</a></li>
-                    </ul>
+                    <li class="nav-item "><a href="{{ url('home') }}" class="nav-link pl-0">Home</a></li>
+                    <li class="nav-item active"><a href="{{ url('about') }}" class="nav-link">About</a></li>
+                    <li class="nav-item "><a href="{{ url('contact') }}" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="{{ url('teacher') }}" class="nav-link">Events and Activities</a></li>
+                    <li class="nav-item"><a href="{{ url('courses') }}" class="nav-link">Academics</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- END nav -->
 
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url({{ asset('frontend/images/img1.jpeg') }});">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-center"
-                    data-scrollax-parent="true">
-                    <div class="col-md-8 text-center ftco-animate">
-                        <h1 class="mb-4">Children Are The Best <span>Explorers In The World</span></h1>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url({{ asset('frontend/images/img-1.jpeg') }});">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row no-gutters slider-text align-items-center justify-content-center"
-                    data-scrollax-parent="true">
-                    <div class="col-md-8 text-center ftco-animate">
-                        <h1 class="mb-4">Perfect Learned<span> For Your Child</span></h1>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-services ftco-no-pb">
-        <div class="container-wrap">
-            <div class="row no-gutters">
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-primary">
-                    <div class="media block-6 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-teacher"></span>
-                        </div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Certified Teachers</h3>
-                            <p>Experienced and dedicated teachers committed to guiding every child toward excellence and
-                                holistic growth</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-tertiary">
-                    <div class="media block-6 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-reading"></span>
-                        </div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Safe Learning Environment</h3>
-                            <p>A secure, friendly, and supportive atmosphere where children feel confident to learn and
-                                thrive..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-fifth">
-                    <div class="media block-6 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-books"></span>
-                        </div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Book &amp; Library</h3>
-                            <p>A well-stocked library that encourages a culture of reading, research, and knowledge
-                                exploration</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-quarternary">
-                    <div class="media block-6 d-block text-center">
-                        <div class="icon d-flex justify-content-center align-items-center">
-                            <span class="flaticon-diploma"></span>
-                        </div>
-                        <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Curriculum</h3>
-                            <p>A well-structured curriculum designed to build strong academic foundations while
-                                nurturing creativity, critical thinking, and life skills.</p>
-                        </div>
-                    </div>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('frontend/images/img-2.jpeg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center">
+                <div class="col-md-9 ftco-animate text-center">
+                    <h1 class="mb-2 bread">About Us</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                                    class="ion-ios-arrow-forward"></i></a></span> <span>About us <i
+                                class="ion-ios-arrow-forward"></i></span></p>
                 </div>
             </div>
         </div>
@@ -182,8 +111,8 @@
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
                     <h2 class="mb-4">What We Offer</h2>
-                    <p>At our school, we provide a nurturing environment where every child can learn and grow.
-                        We offer quality education, fun learning activities,
+                    <p>At our school, we provide a nurturing environment where every child can learn and grow. We offer
+                        quality education, fun learning activities,
                         and opportunities to develop talents and values that last a lifetime.</p>
                     <div class="row mt-5">
                         <div class="col-lg-6">
@@ -257,203 +186,14 @@
         </div>
     </section>
 
-    <section class="ftco-intro" style="background-image: url('{{ asset('frontend/images/image2.jpeg') }}');"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <h2>Teaching Your Child Some Good Manners</h2>
-                    <p class="mb-0">We teach children respect, politeness, and positive behavior for daily life.</p>
-
-                </div>
-                <div class="col-md-3 d-flex align-items-center">
-                    <p class="mb-0"><a href="#" class="btn btn-secondary px-4 py-3">Learn More</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="ftco-section ftco-no-pb">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Certified</span> Teachers</h2>
-                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
-                        necessary regelialia. It is a paradisematic country</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-1.jpg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Bianca Wilson</h3>
-                            <span class="position mb-2">Teacher</span>
-                            <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-2.jpg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Mitch Parker</h3>
-                            <span class="position mb-2">English Teacher</span>
-                            <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-3.jpg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Stella Smith</h3>
-                            <span class="position mb-2">Art Teacher</span>
-                            <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-4.jpg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Monshe Henderson</h3>
-                            <span class="position mb-2">Science Teacher</span>
-                            <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Subjects</span> We Teach</h2>
-                    <p>Grace Junior School offers a broad curriculum to build strong academic foundations and essential
-                        skills.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-1.jpg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">English</a></h3>
-                        <p>Develops reading, writing, grammar, and communication skills for everyday use.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-2.jpg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">Social Studies (SST)</a></h3>
-                        <p>Introduces learners to history, geography, civics, and community awareness.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-3.jpg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">Science</a></h3>
-                        <p>Encourages curiosity, observation, and understanding of the natural and physical world.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-4.jpg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">Mathematics</a></h3>
-                        <p>Focuses on numeracy, problem-solving, and logical thinking skills for everyday use.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-5.jpg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">Swahili</a></h3>
-                        <p>Develops reading, writing, and speaking skills in Swahili, fostering cultural understanding.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="ftco-section ftco-counter img" id="section-counter"
-        style="background-image: url('{{ asset('frontend/images/bg_4.jpg') }}');"
-        data-stellar-background-ratio="0.5">
+        style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
                     <h2 class="mb-4"><span>16 Years of</span> Experience</h2>
                     <p>Grace Junior School has been providing quality education and nurturing young learners since 2007,
-                        building strong foundations for academic and personal growth.</p>
-
+                        building strong foundations for academic and personal growth</p>
                 </div>
             </div>
             <div class="row d-md-flex align-items-center justify-content-center">
@@ -490,7 +230,7 @@
                             <div class="block-18">
                                 <div class="icon"><span class="flaticon-doctor"></span></div>
                                 <div class="text">
-                                    <strong class="number" data-number="20">0</strong>
+                                    <strong class="number" data-number="300">0</strong>
                                     <span>Awards Won</span>
                                 </div>
                             </div>
@@ -505,7 +245,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-					<span class="subheading">Testimonial</span>
+                    <span class="subheading">Testimonial</span>
                     <h2 class="mb-4"><span>What Parents</span> Say About Us</h2>
                     <p>Parents appreciate our caring environment, dedicated teachers, and holistic approach that helps
                         children excel academically and socially.</p>
@@ -634,116 +374,6 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-2">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Our</span> Clubs</h2>
-                    <p>Students at Grace Junior School can join these clubs to develop skills and explore interests.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/image5.jpeg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Young Farmer's Clubs</h3>
-                            <div class="faded">
-                                <p>Students learn practical farming skills and environmental stewardship.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/image2.jpeg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Computer Club</h3>
-                            <div class="faded">
-                                <p>Introduces students to computer skills, coding, and digital literacy.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/img-8.jpeg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Debate Club</h3>
-                            <div class="faded">
-                                <p>Students engage in public speaking, critical thinking, and argumentation.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="staff">
-                        <div class="img-wrap d-flex align-items-stretch">
-                            <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/img-2.jpeg') }}');"></div>
-                        </div>
-                        <div class="text pt-3 text-center">
-                            <h3>Christian Union Club</h3>
-                            <div class="faded">
-                                <p>Christian Union Club is a place for students to explore and deepen their faith.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
             <div class="row mb-5">
@@ -843,6 +473,7 @@
         </div>
     </footer>
 
+
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
@@ -850,23 +481,21 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
                 stroke-miterlimit="10" stroke="#F96D00" />
         </svg></div>
-
-
-    <script src="{{ url('frontend/js/jquery.min.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery-migrate-3.0.1.min.js') }}"></script>
-    <script src="{{ url('frontend/js/popper.min.js') }}"></script>
-    <script src="{{ url('frontend/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery.easing.1.3.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery.stellar.min.js') }}"></script>
-    <script src="{{ url('frontend/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ url('frontend/js/aos.js') }}"></script>
-    <script src="{{ url('frontend/js/jquery.animateNumber.min.js') }}"></script>
-    <script src="{{ url('frontend/js/scrollax.min.js') }}"></script>
-    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> --}}
-    <script src="{{ url('frontend/js/google-map.js') }}"></script>
-    <script src="{{ url('frontend/js/main.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery-migrate-3.0.1.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/popper.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.easing.1.3.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/aos.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery.animateNumber.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/scrollax.min.js') }}"></script>
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{{ asset('frontend/js/google-map.js') }}"></script> --}}
+    <script src="{{ asset('frontend/js/main.js') }}"></script>
 
 </body>
 
