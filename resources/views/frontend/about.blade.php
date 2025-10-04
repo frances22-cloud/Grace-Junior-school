@@ -62,19 +62,17 @@
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
-            <!-- <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p> -->
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item "><a href="{{ url('home') }}" class="nav-link pl-0">Home</a></li>
                     <li class="nav-item active"><a href="{{ url('about') }}" class="nav-link">About</a></li>
                     <li class="nav-item "><a href="{{ url('contact') }}" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="{{ url('teacher') }}" class="nav-link">Events and Activities</a></li>
-                    <li class="nav-item"><a href="{{ url('courses') }}" class="nav-link">Academics</a></li>
+                    <li class="nav-item"><a href="{{ url('gallery') }}" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="{{ url('academics') }}" class="nav-link">Academics</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('frontend/images/img-2.jpeg');">
         <div class="overlay"></div>
@@ -93,57 +91,27 @@
     <section class="ftco-section ftco-no-pt ftc-no-pb">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 order-md-last wrap-about py-5 wrap-about bg-light">
+                <div class="col-md-5 order-md-last wrap-about py-5 bg-light">
                     <div class="text px-4 ftco-animate">
-                        <h2 class="mb-4">Welcome to Grace Junior School</h2>
-                        <h5 class="text-muted mb-4"><em>“Shine in Excellence”</em></h5>
-                        <p>Grace Junior School, located in the heart of our community, has been dedicated to nurturing
-                            young learners since 1998. We offer a strong academic curriculum supported by qualified
-                            teachers who inspire excellence and character development. Our aim is to provide children
-                            with the knowledge, values, and confidence they need to succeed in school and beyond.</p>
-                        <p>Alongside academics, we create opportunities for learners to explore their talents through
-                            sports, music, and co-curricular activities. With a safe and supportive environment, a
-                            well-stocked library, and modern learning resources, Grace Junior School continues to be a
-                            place where children grow, discover their potential, and truly shine in excellence.</p>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3">Read More</a></p>
-
+                        <h2 class="mb-4">Our Vision & Mission</h2>
+                        <p><strong>Vision:</strong> To be a leading primary school that nurtures well-rounded learners
+                            who excel academically, socially, and morally.</p>
+                        <p><strong>Mission:</strong> To provide high-quality education in a safe and supportive
+                            environment, empowering learners to discover their potential and grow into responsible
+                            citizens.</p>
+                        <p><a href="#" class="btn btn-secondary px-4 py-3">Learn More</a></p>
                     </div>
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
-                    <h2 class="mb-4">What We Offer</h2>
-                    <p>At our school, we provide a nurturing environment where every child can learn and grow. We offer
-                        quality education, fun learning activities,
-                        and opportunities to develop talents and values that last a lifetime.</p>
-                    <div class="row mt-5">
+                    <h2 class="mb-4">Our Core Values</h2>
+                    <div class="row mt-4">
                         <div class="col-lg-6">
                             <div class="services-2 d-flex">
                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
-                                        class="flaticon-security"></span></div>
+                                        class="flaticon-heart"></span></div>
                                 <div class="text">
-                                    <h3>Safety First</h3>
-                                    <p>We provide a safe, caring environment where every child thrives daily.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services-2 d-flex">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
-                                        class="flaticon-reading"></span></div>
-                                <div class="text">
-                                    <h3>Regular Classes</h3>
-                                    <p>Structured classes with skilled teachers ensure consistent learning for every
-                                        student.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="services-2 d-flex">
-                                <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
-                                        class="flaticon-diploma"></span></div>
-                                <div class="text">
-                                    <h3>Dedicated Educators</h3>
-                                    <p>Certified, experienced teachers are committed to nurturing students’ full
-                                        potential.</p>
+                                    <h3>Integrity</h3>
+                                    <p>We teach honesty and fairness in all that we do.</p>
                                 </div>
                             </div>
                         </div>
@@ -152,31 +120,28 @@
                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
                                         class="flaticon-education"></span></div>
                                 <div class="text">
-                                    <h3>Sufficient Classrooms</h3>
-                                    <p>Spacious classrooms with modern furniture and aids foster focused learning daily.
-                                    </p>
+                                    <h3>Excellence</h3>
+                                    <p>We encourage learners to achieve their very best every day.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="services-2 d-flex">
                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
-                                        class="flaticon-jigsaw"></span></div>
+                                        class="flaticon-idea"></span></div>
                                 <div class="text">
-                                    <h3>Safe Drinking Water</h3>
-                                    <p>Our school ensures access to clean and safe drinking water, promoting health and
-                                        well-being for all students..</p>
+                                    <h3>Creativity</h3>
+                                    <p>We promote innovation and critical thinking through active learning.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="services-2 d-flex">
                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
-                                        class="flaticon-kids"></span></div>
+                                        class="flaticon-team"></span></div>
                                 <div class="text">
-                                    <h3>Healthy Meals</h3>
-                                    <p>Our school provides nutritious, balanced meals to support your child’s growth,
-                                        energy, and overall well-being.</p>
+                                    <h3>Teamwork</h3>
+                                    <p>We believe in unity and working together to achieve success.</p>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +152,7 @@
     </section>
 
     <section class="ftco-section ftco-counter img" id="section-counter"
-        style="background-image: url(images/bg_4.jpg);" data-stellar-background-ratio="0.5">
+        style="background-image: url(frontend/images/bg_4.jpg);" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
@@ -245,8 +210,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <span class="subheading">Testimonial</span>
-                    <h2 class="mb-4"><span>What Parents</span> Say About Us</h2>
+                    <h2 class="mb-2"><span>What Parents</span> Say About Us</h2>
                     <p>Parents appreciate our caring environment, dedicated teachers, and holistic approach that helps
                         children excel academically and socially.</p>
                 </div>
@@ -340,7 +304,7 @@
             <div class="row justify-content-end">
                 <div class="col-md-6 py-5 px-md-5 bg-primary">
                     <div class="heading-section heading-section-white ftco-animate mb-5">
-                        <h2 class="mb-4">Contact & Admissions</h2>
+                        <h2 class="mb-4">Contact Admissions</h2>
                         <p>Reach out to us for admissions or any questions about Grace Junior School.</p>
                     </div>
                     <form action="#" class="appointment-form ftco-animate">
@@ -379,13 +343,11 @@
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <h2 class="ftco-heading-2">Contact Information</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad),
-                                        Ngora District</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
-                                            782996567/+256788625005</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad), Ngora District, Uganda</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256 782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">gjuniororisai@gmail.com</span></a></li>
                             </ul>
@@ -393,45 +355,25 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    {{-- <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Recent Blog</h2>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Office Hours</h2>
+                        <div class="block-21 mb-4 d-flex flex-column">
+                            <p class="mb-1">Monday – Friday: 8:00 AM – 4:00 PM</p>
+                            <p class="mb-0">Saturday – Sunday: Closed</p>
                         </div>
-                        <div class="block-21 mb-5 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about</a></h3>
-                            </div>
-                        </div>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5 ml-md-4">
-                        <h2 class="ftco-heading-2">Links</h2>
+                        <h2 class="ftco-heading-2">Useful Links</h2>
                         <ul class="list-unstyled">
-                            <li><a href="{{ url('home') }}"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                            <li><a href="{{ url('about') }}"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                            <li><a href="{{ url('contact') }}"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+                            <li><a href="{{ url('home') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                            <li><a href="{{ url('about') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+                            <li><a href="{{ url('gallery') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
                             </li>
-                            <li><a href="{{ url('teacher') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>
-                                    Events & Activities </a>
+                            <li><a href="{{ url('academics') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
                             </li>
-                            <li><a href="{{ url('courses') }}"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
+                            <li><a href="{{ url('contact') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -457,19 +399,15 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
+            <div class="row">
                 <div class="col-md-12 text-center">
-
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
+                    <p>Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </script> Grace Junior School. All rights reserved.
                     </p>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </footer>
 

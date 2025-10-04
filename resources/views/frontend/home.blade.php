@@ -69,9 +69,8 @@
                         <li class="nav-item active"><a href="{{ url('home') }}" class="nav-link pl-0">Home</a></li>
                         <li class="nav-item"><a href="{{ url('about') }}" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="{{ url('contact') }}" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="{{ url('teachers') }}" class="nav-link">Events and Activities</a>
-                        </li>
-                        <li class="nav-item"><a href="{{ url('courses') }}" class="nav-link">Academics</a></li>
+                        <li class="nav-item"><a href="{{ url('gallery') }}" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="{{ url('academics') }}" class="nav-link">Academics</a></li>
                     </ul>
             </div>
         </div>
@@ -263,7 +262,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9">
-                    <h2>Teaching Your Child Some Good Manners</h2>
+                    <h2>Training a child</h2>
                     <p class="mb-0">We teach children respect, politeness, and positive behavior for daily life.</p>
 
                 </div>
@@ -274,14 +273,11 @@
         </div>
     </section>
 
-
     <section class="ftco-section ftco-no-pb">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Certified</span> Teachers</h2>
-                    <p>Separated they live in. A small river named Duden flows by their place and supplies it with the
-                        necessary regelialia. It is a paradisematic country</p>
+                    <h2 class="mb-2"><span>Certified</span> Teachers</h2>
                 </div>
             </div>
             <div class="row">
@@ -289,23 +285,14 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-1.jpg') }}');"></div>
+                                style="background-image: url('{{ asset('frontend/images/tr-1.jpeg') }}');"></div>
                         </div>
                         <div class="text pt-3 text-center">
-                            <h3>Bianca Wilson</h3>
-                            <span class="position mb-2">Teacher</span>
+                            <h3>Mr.Okalebo Amos Brian</h3>
+                            <span class="position mb-2">Deputy Head Teacher</span>
                             <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+                                <p>Teaches Social Studies and Religious Education from lower to upper primary</p>
+
                             </div>
                         </div>
                     </div>
@@ -314,23 +301,13 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-2.jpg') }}');"></div>
+                                style="background-image: url('{{ asset('frontend/images/tr-2.jpeg') }}');"></div>
                         </div>
                         <div class="text pt-3 text-center">
-                            <h3>Mitch Parker</h3>
-                            <span class="position mb-2">English Teacher</span>
+                            <h3>Mr.Okwomi Boniface</h3>
+                            <span class="position mb-2">Director Of Studies</span>
                             <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+                                <p>Teaches Kiswahili language from lower primary to upper primary.</p>
                             </div>
                         </div>
                     </div>
@@ -339,23 +316,13 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-3.jpg') }}');"></div>
+                                style="background-image: url('{{ asset('frontend/images/tr-5.jpeg') }}');"></div>
                         </div>
                         <div class="text pt-3 text-center">
-                            <h3>Stella Smith</h3>
-                            <span class="position mb-2">Art Teacher</span>
+                            <h3>Mrs.Akello Sophia</h3>
+                            <span class="position mb-2">Tr. Incharge Debate Club</span>
                             <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+                                <p>Teaches English language from lower primary to upper primary.</p>
                             </div>
                         </div>
                     </div>
@@ -364,23 +331,13 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/teacher-4.jpg') }}');"></div>
+                                style="background-image: url('{{ asset('frontend/images/tr-4.jpeg') }}');"></div>
                         </div>
                         <div class="text pt-3 text-center">
-                            <h3>Monshe Henderson</h3>
-                            <span class="position mb-2">Science Teacher</span>
+                            <h3>Mr.Ecodu Benedicto</h3>
+                            <span class="position mb-2">Examinations Master</span>
                             <div class="faded">
-                                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+                                <p>Teaches Integrated Science from lower primary to upper primary.</p>
                             </div>
                         </div>
                     </div>
@@ -393,47 +350,47 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Subjects</span> We Teach</h2>
+                    <h2 class="mb-2"><span>Subjects</span> We Teach</h2>
                     <p>Grace Junior School offers a broad curriculum to build strong academic foundations and essential
                         skills.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-1.jpg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/tr-5.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">English</a></h3>
                         <p>Develops reading, writing, grammar, and communication skills for everyday use.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-2.jpg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/tr-1.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Social Studies (SST)</a></h3>
                         <p>Introduces learners to history, geography, civics, and community awareness.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-3.jpg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/tr-3.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Science</a></h3>
                         <p>Encourages curiosity, observation, and understanding of the natural and physical world.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-4.jpg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/tr-4.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Mathematics</a></h3>
                         <p>Focuses on numeracy, problem-solving, and logical thinking skills for everyday use.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img"
-                        style="background-image: url('{{ asset('frontend/images/course-5.jpg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/tr-2.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Swahili</a></h3>
                         <p>Develops reading, writing, and speaking skills in Swahili, fostering cultural understanding.
@@ -450,7 +407,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section heading-section-black ftco-animate">
-                    <h2 class="mb-4"><span>16 Years of</span> Experience</h2>
+                    <h2 class="mb-2"><span>16 Years of</span> Experience</h2>
                     <p>Grace Junior School has been providing quality education and nurturing young learners since 2007,
                         building strong foundations for academic and personal growth.</p>
 
@@ -505,8 +462,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-					<span class="subheading">Testimonial</span>
-                    <h2 class="mb-4"><span>What Parents</span> Say About Us</h2>
+                    <h2 class="mb-2"><span>What Parents</span> Say About Us</h2>
                     <p>Parents appreciate our caring environment, dedicated teachers, and holistic approach that helps
                         children excel academically and socially.</p>
                 </div>
@@ -600,7 +556,7 @@
             <div class="row justify-content-end">
                 <div class="col-md-6 py-5 px-md-5 bg-primary">
                     <div class="heading-section heading-section-white ftco-animate mb-5">
-                        <h2 class="mb-4">Contact & Admissions</h2>
+                        <h2 class="mb-2">Contact Admissions</h2>
                         <p>Reach out to us for admissions or any questions about Grace Junior School.</p>
                     </div>
                     <form action="#" class="appointment-form ftco-animate">
@@ -638,7 +594,7 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Our</span> Clubs</h2>
+                    <h2 class="mb-2"><span>Our</span> Clubs</h2>
                     <p>Students at Grace Junior School can join these clubs to develop skills and explore interests.</p>
                 </div>
             </div>
@@ -653,16 +609,7 @@
                             <h3>Young Farmer's Clubs</h3>
                             <div class="faded">
                                 <p>Students learn practical farming skills and environmental stewardship.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+
                             </div>
                         </div>
                     </div>
@@ -677,16 +624,7 @@
                             <h3>Computer Club</h3>
                             <div class="faded">
                                 <p>Introduces students to computer skills, coding, and digital literacy.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
+
                             </div>
                         </div>
                     </div>
@@ -695,22 +633,12 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             <div class="img align-self-stretch"
-                                style="background-image: url('{{ asset('frontend/images/img-8.jpeg') }}');"></div>
+                                style="background-image: url('{{ asset('frontend/images/pupils-4.jpeg') }}');"></div>
                         </div>
                         <div class="text pt-3 text-center">
                             <h3>Debate Club</h3>
                             <div class="faded">
                                 <p>Students engage in public speaking, critical thinking, and argumentation.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
                             </div>
                         </div>
 
@@ -726,16 +654,6 @@
                             <h3>Christian Union Club</h3>
                             <div class="faded">
                                 <p>Christian Union Club is a place for students to explore and deepen their faith.</p>
-                                <ul class="ftco-social text-center">
-                                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a>
-                                    </li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-facebook"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-google-plus"></span></a></li>
-                                    <li class="ftco-animate"><a href="#"><span
-                                                class="icon-instagram"></span></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -749,13 +667,13 @@
             <div class="row mb-5">
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <h2 class="ftco-heading-2">Contact Information</h2>
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad),
-                                        Ngora District</span></li>
+                                        Ngora District, Uganda</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
-                                            782996567/+256788625005</span></a></li>
+                                            782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">gjuniororisai@gmail.com</span></a></li>
                             </ul>
@@ -763,45 +681,30 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    {{-- <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Recent Blog</h2>
-                        <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about</a></h3>
-                                <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                                </div>
-                            </div>
+                    <div class="ftco-footer-widget mb-5">
+                        <h2 class="ftco-heading-2">Office Hours</h2>
+                        <div class="block-21 mb-4 d-flex flex-column">
+                            <p class="mb-1">Monday – Friday: 8:00 AM – 4:00 PM</p>
+                            <p class="mb-0">Saturday – Sunday: Closed</p>
                         </div>
-                        <div class="block-21 mb-5 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                            <div class="text">
-                                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control
-                                        about</a></h3>
-                            </div>
-                        </div>
-                    </div> --}}
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5 ml-md-4">
-                        <h2 class="ftco-heading-2">Links</h2>
+                        <h2 class="ftco-heading-2">Useful Links</h2>
                         <ul class="list-unstyled">
                             <li><a href="{{ url('home') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
                             <li><a href="{{ url('about') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+                            <li><a href="{{ url('gallery') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
+                            </li>
+                            <li><a href="{{ url('academics') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
+                            </li>
                             <li><a href="{{ url('contact') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
-                            </li>
-                            <li><a href="{{ url('teacher') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>
-                                    Events & Activities </a>
-                            </li>
-                            <li><a href="{{ url('courses') }}"><span
-                                        class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
                             </li>
                         </ul>
                     </div>
@@ -827,19 +730,16 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
+            
+            <div class="row">
                 <div class="col-md-12 text-center">
-
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
+                    <p>Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </script> Grace Junior School. All rights reserved.
                     </p>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </footer>
 
@@ -850,7 +750,6 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
                 stroke-miterlimit="10" stroke="#F96D00" />
         </svg></div>
-
 
     <script src="{{ url('frontend/js/jquery.min.js') }}"></script>
     <script src="{{ url('frontend/js/jquery-migrate-3.0.1.min.js') }}"></script>

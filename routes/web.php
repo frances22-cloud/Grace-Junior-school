@@ -19,10 +19,10 @@ Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
 
-Route::get('/courses', function () {
-    return view('frontend.courses');
-})->name('courses');
+Route::get('/academics', function () {
+    return view('frontend.academics');
+})->name('academics');
 
-Route::get('/teachers', function () {
-    return view('frontend.teachers');
-})->name('teachers');
+Route::get('/gallery', function () {
+    return view('frontend.gallery');
+})->name('gallery');
