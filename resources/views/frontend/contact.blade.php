@@ -158,21 +158,56 @@
                         class="card shadow-lg border-0 rounded-lg w-100 d-flex align-items-center justify-content-center">
                         <div class="card-body p-5 w-100">
                             <h3 class="text-center mb-4 text-primary">Get In Touch</h3>
-                            <form action="#">
+                            <form action="{{ route('contact.send') }}" method="POST">
+                                @csrf
+
+                                @if (session('success'))
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        {{ session('success') }}
+                                        <button type="button" class="close" data-dismiss="alert"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                @endif
+
+                                @if ($errors->any())
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <ul class="mb-0">
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                        <button type="button" class="close" data-dismiss="alert"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                @endif
+
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg rounded-pill"
-                                        placeholder="Your Name" required>
+                                    <input type="text" name="name"
+                                        class="form-control form-control-lg rounded-pill" placeholder="Your Name"
+                                        value="{{ old('name') }}" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input type="email" class="form-control form-control-lg rounded-pill"
-                                        placeholder="Your Email" required>
+                                    <input type="email" name="email"
+                                        class="form-control form-control-lg rounded-pill" placeholder="Your Email"
+                                        value="{{ old('email') }}" required>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg rounded-pill"
-                                        placeholder="Subject" required>
+                                    <input type="tel" name="phone"
+                                        class="form-control form-control-lg rounded-pill" placeholder="Phone Number"
+                                        value="{{ old('phone') }}" required>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" name="subject"
+                                        class="form-control form-control-lg rounded-pill" placeholder="Subject"
+                                        value="{{ old('subject') }}" required>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <textarea cols="30" rows="5" class="form-control form-control-lg rounded" placeholder="Message" required></textarea>
+                                    <textarea name="message" cols="30" rows="5" class="form-control form-control-lg rounded"
+                                        placeholder="Message" required>{{ old('message') }}</textarea>
                                 </div>
                                 <div class="form-group text-center">
                                     <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill shadow-sm">
