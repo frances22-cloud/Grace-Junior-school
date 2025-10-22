@@ -74,7 +74,8 @@
     </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('frontend/images/pupils-4.jpeg') }}');">
+    <section class="hero-wrap hero-wrap-2"
+        style="background-image: url('{{ asset('frontend/images/pupils-4.jpeg') }}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -89,67 +90,79 @@
     </section>
 
     <!-- Curriculum Overview Section -->
-    <section class="ftco-section ftco-no-pt">
+    <section class="ftco-section" style="padding-top: 40px; padding-bottom: 70px;">
         <div class="container">
             <div class="row justify-content-center mb-5 pt-5">
                 <div class="col-md-8 text-center heading-section ftco-animate">
                     <h2 class="mb-4"><span>Our</span> Curriculum</h2>
-                    <p>At Grace Junior School, we provide a comprehensive, child-centered education that nurtures academic excellence, character development, and practical skills for life.</p>
+                    <p>At Grace Junior School, we provide a comprehensive, child-centered education that nurtures
+                        academic excellence, character development, and practical skills for life.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Subjects & Programs Section -->
-    <section class="ftco-section ftco-no-pt">
+    <section class="ftco-section" style="padding-top: 40px; padding-bottom: 70px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img3.jpeg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/img3.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Mathematics</a></h3>
                         <p class="subheading"><span>Focus:</span> Numeracy & Problem Solving</p>
-                        <p>Building strong foundational skills in arithmetic, geometry, and logical reasoning to develop confident mathematical thinkers.</p>
+                        <p>Building strong foundational skills in arithmetic, geometry, and logical reasoning to develop
+                            confident mathematical thinkers.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img2.jpeg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/img2.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">English Language</a></h3>
                         <p class="subheading"><span>Focus:</span> Reading, Writing & Communication</p>
-                        <p>Developing literacy skills through engaging activities that enhance reading comprehension, creative writing, and effective communication.</p>
+                        <p>Developing literacy skills through engaging activities that enhance reading comprehension,
+                            creative writing, and effective communication.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-7.jpeg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-7.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
-                        <h3><a href="#">Science & Nature Studies</a></h3>
+                        <h3><a href="#">Science</a></h3>
                         <p class="subheading"><span>Focus:</span> Exploration & Discovery</p>
-                        <p>Hands-on experiments and observations that foster curiosity about the natural world and develop scientific thinking.</p>
+                        <p>Hands-on experiments and observations that foster curiosity about the natural world and
+                            develop scientific thinking.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-4.jpeg') }}');"></div>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-4.jpeg') }}');">
+                    </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Social Studies</a></h3>
                         <p class="subheading"><span>Focus:</span> Community & Culture</p>
-                        <p>Understanding our society, history, geography, and cultural heritage to develop informed and responsible citizens.</p>
+                        <p>Understanding our society, history, geography, and cultural heritage to develop informed and
+                            responsible citizens.</p>
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/image1.jpeg') }}');"></div>
-                    <div class="text bg-light p-4">
-                        <h3><a href="#">Creative Arts</a></h3>
-                        <p class="subheading"><span>Focus:</span> Music, Drama & Art</p>
-                        <p>Encouraging creativity and self-expression through various artistic mediums including drawing, painting, music, and performance.</p>
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/image1.jpeg') }}');">
                     </div>
-                </div>
-                <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/image2.jpeg') }}');"></div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Physical Education</a></h3>
                         <p class="subheading"><span>Focus:</span> Health & Fitness</p>
-                        <p>Promoting physical development, teamwork, and healthy lifestyle habits through sports, games, and exercise activities.</p>
+                        <p>Promoting physical development, teamwork, and healthy lifestyle habits through sports, games,
+                            and exercise activities.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 course d-lg-flex ftco-animate">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/image2.jpeg') }}');">
+                    </div>
+                    <div class="text bg-light p-4">
+                        <h3><a href="#">Computer Lessons</a></h3>
+                        <p class="subheading"><span>Focus:</span> Digital Literacy</p>
+                        <p>Introduce children to digital skills, coding</p>
                     </div>
                 </div>
             </div>
@@ -157,33 +170,43 @@
     </section>
 
     <!-- Academic Features Section -->
-    <section class="ftco-section testimony-section bg-light">
+    <section class="ftco-section testimony-section bg-light" style="padding-top: 40px; padding-bottom: 70px;">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Academic</span> Features</h2>
+                    <h2 class="mb-2"><span>School</span> Levels</h2>
+                    <p>Grace Junior School provides a strong learning foundation across all levels — from nurturing
+                        curiosity in nursery to preparing young learners for academic excellence in upper primary.</p>
                 </div>
             </div>
             <div class="row">
+                <!-- Nursery -->
                 <div class="col-md-4 ftco-animate">
                     <div class="text bg-white p-4 text-center" style="height: 100%;">
-                        <span class="icon-book" style="font-size: 60px; color: #f96d00;"></span>
-                        <h3 class="mt-3">Qualified Teachers</h3>
-                        <p>Our dedicated and experienced teachers are committed to providing quality education and individual attention to each student.</p>
+                        <span class="icon-child" style="font-size: 60px; color: #f96d00;"></span>
+                        <h3 class="mt-3">Nursery</h3>
+                        <p>Our nursery program encourages early childhood development through play, creativity, and
+                            social interaction in a warm and caring environment.</p>
                     </div>
                 </div>
+
+                <!-- Lower Primary -->
+                <div class="col-md-4 ftco-animate">
+                    <div class="text bg-white p-4 text-center" style="height: 100%;">
+                        <span class="icon-pencil" style="font-size: 60px; color: #f96d00;"></span>
+                        <h3 class="mt-3">Lower Primary (P1 - P3)</h3>
+                        <p>We build strong literacy and numeracy skills while encouraging critical thinking and
+                            curiosity to lay a solid academic foundation.</p>
+                    </div>
+                </div>
+
+                <!-- Upper Primary -->
                 <div class="col-md-4 ftco-animate">
                     <div class="text bg-white p-4 text-center" style="height: 100%;">
                         <span class="icon-graduation-cap" style="font-size: 60px; color: #f96d00;"></span>
-                        <h3 class="mt-3">Small Class Sizes</h3>
-                        <p>We maintain manageable class sizes to ensure personalized instruction and meaningful teacher-student interactions.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="text bg-white p-4 text-center" style="height: 100%;">
-                        <span class="icon-trophy" style="font-size: 60px; color: #f96d00;"></span>
-                        <h3 class="mt-3">Holistic Development</h3>
-                        <p>Beyond academics, we focus on character building, life skills, and nurturing each child's unique talents and abilities.</p>
+                        <h3 class="mt-3">Upper Primary (P4 - P7)</h3>
+                        <p>Preparing learners for national exams and beyond by focusing on academic excellence,
+                            leadership, and holistic personal development.</p>
                     </div>
                 </div>
             </div>
@@ -191,25 +214,26 @@
     </section>
 
     <!-- Academic Calendar Section -->
-    <section class="ftco-section">
+    <section class="ftco-section" style="padding-top: 40px; padding-bottom: 0px;">
         <div class="container">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center mb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4"><span>Academic</span> Information</h2>
+                    <h2 class="mb-2"><span>Academic</span> Information</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 ftco-animate">
-                    <div class="bg-light p-4 mb-4">
+                    <div class="bg-light p-4 mb-2">
                         <h4><span class="icon-calendar mr-2"></span>Academic Calendar</h4>
                         <p class="mb-2"><strong>Term 1:</strong> January - April</p>
                         <p class="mb-2"><strong>Term 2:</strong> May - August</p>
                         <p class="mb-2"><strong>Term 3:</strong> September - December</p>
-                        <p class="mt-3"><small>Mid-term breaks and public holidays are observed as per the national calendar.</small></p>
+                        <p class="mt-3"><small>Mid-term breaks and public holidays are observed as per the national
+                                calendar.</small></p>
                     </div>
                 </div>
                 <div class="col-md-6 ftco-animate">
-                    <div class="bg-light p-4 mb-4">
+                    <div class="bg-light p-4 mb-2">
                         <h4><span class="icon-clock-o mr-2"></span>School Hours</h4>
                         <p class="mb-2"><strong>Morning Assembly:</strong> 7:30 AM</p>
                         <p class="mb-2"><strong>Classes Begin:</strong> 8:00 AM</p>
@@ -218,15 +242,18 @@
                     </div>
                 </div>
                 <div class="col-md-6 ftco-animate">
-                    <div class="bg-light p-4 mb-4">
+                    <div class="bg-light p-4 mb-2">
                         <h4><span class="icon-clipboard mr-2"></span>Assessment & Reporting</h4>
-                        <p>We conduct continuous assessments to monitor student progress. Report cards are issued at the end of each term, followed by parent-teacher conferences to discuss each child's academic and personal development.</p>
+                        <p>We conduct continuous assessments to monitor student progress. Report cards are issued at the
+                            end of each term, parents are encouraged to discuss their children's performance.</p>
                     </div>
                 </div>
                 <div class="col-md-6 ftco-animate">
-                    <div class="bg-light p-4 mb-4">
+                    <div class="bg-light p-4 mb-2">
                         <h4><span class="icon-star mr-2"></span>Extra-Curricular Activities</h4>
-                        <p>Students participate in clubs, sports, music, drama, and field trips that complement classroom learning and help develop well-rounded individuals with diverse interests and skills.</p>
+                        <p>Students participate in clubs, sports, music, drama, and field trips that complement
+                            classroom learning and help develop well-rounded individuals with diverse interests and
+                            skills.</p>
                     </div>
                 </div>
             </div>
@@ -235,14 +262,16 @@
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
-            <div class="row mb-5">
+            <div class="row mb-3">
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5">
                         <h2 class="ftco-heading-2">Contact Information</h2>
-                        <div class="block-23 mb-3">
+                        <div class="block-23 mb-2">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad), Ngora District, Uganda</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256 782996567 / +256 788625005</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad),
+                                        Ngora District, Uganda</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
+                                            782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">gjuniororisai@gmail.com</span></a></li>
                             </ul>
@@ -250,32 +279,37 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="ftco-footer-widget mb-5">
+                    <div class="ftco-footer-widget mb-3">
                         <h2 class="ftco-heading-2">Office Hours</h2>
-                        <div class="block-21 mb-4 d-flex flex-column">
-                            <p class="mb-1">Monday – Friday: 8:00 AM – 4:00 PM</p>
-                            <p class="mb-0">Saturday – Sunday: Closed</p>
+                        <div class="block-21 mb-2 d-flex flex-column">
+                            <p class="mb-1">Monday – Friday: 8:00 AM – 5:00 PM</p>
+                            <p class="mb-0">Weekends: 9:00am - 3:00pm</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="ftco-footer-widget mb-5 ml-md-4">
+                    <div class="ftco-footer-widget mb-3 ml-md-4">
                         <h2 class="ftco-heading-2">Useful Links</h2>
                         <ul class="list-unstyled">
-                            <li><a href="{{ url('home') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                            <li><a href="{{ url('about') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                            <li><a href="{{ url('gallery') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
+                            <li><a href="{{ url('home') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                            <li><a href="{{ url('about') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+                            <li><a href="{{ url('gallery') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
                             </li>
-                            <li><a href="{{ url('academics') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
+                            <li><a href="{{ url('academics') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
                             </li>
-                            <li><a href="{{ url('contact') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+                            <li><a href="{{ url('contact') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Subscribe Us!</h2>
+                    <div class="ftco-footer-widget mb-3">
+                        <h2 class="ftco-heading-2">Subscribe!</h2>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 text-center"
@@ -284,7 +318,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="ftco-footer-widget mb-5">
+                    <div class="ftco-footer-widget mb-2">
                         <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -330,4 +364,5 @@
     <script src="{{ url('frontend/js/main.js') }}"></script>
 
 </body>
+
 </html>

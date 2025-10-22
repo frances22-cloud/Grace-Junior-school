@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grace Junior | School Management System</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('frontend/images/favicon.ico') }}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -657,7 +657,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <img src="{{ asset('images/logo.jpg') }}" alt="Grace Junir School"
+                    <img src="{{ asset('frontend/images/logo.jpg') }}" alt="Grace Junir School"
                         style="max-height: 60px; max-width: 100%; height: auto; width: auto; object-fit: contain;">
                 </a>
                 <ul class="nav-links" id="navLinks">

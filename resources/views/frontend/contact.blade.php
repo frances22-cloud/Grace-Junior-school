@@ -90,60 +90,7 @@
         </div>
     </section>
 
-    <section class="ftco-section contact-section">
-        <div class="container">
-            <div class="row d-flex mb-5 contact-info">
-
-                <!-- Address -->
-                <div class="col-md-3 d-flex">
-                    <div class="bg-light align-self-stretch box p-4 text-center">
-                        <div class="mb-2">
-                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                        </div>
-                        <h3 class="mb-3">Address</h3>
-                        <p>Orisai (Baghdad), Ngora District</p>
-                    </div>
-                </div>
-
-                <!-- Contact Number -->
-                <div class="col-md-3 d-flex">
-                    <div class="bg-light align-self-stretch box p-4 text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-phone-alt fa-2x text-success"></i>
-                        </div>
-                        <h3 class="mb-3">Contact Number</h3>
-                        <p><a href="tel:+256782996567">+256782996567</a> / <a
-                                href="tel:+256788625005">+256788625005</a></p>
-                    </div>
-                </div>
-
-                <!-- Email -->
-                <div class="col-md-3 d-flex">
-                    <div class="bg-light align-self-stretch box p-4 text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-envelope fa-2x text-danger"></i>
-                        </div>
-                        <h3 class="mb-3">Email Address</h3>
-                        <p><a href="mailto:gjuniororisai@gmail.com">gjuniororisai@gmail.com</a></p>
-                    </div>
-                </div>
-
-                <!-- Office Hours -->
-                <div class="col-md-3 d-flex">
-                    <div class="bg-light align-self-stretch box p-4 text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-clock fa-2x text-warning"></i>
-                        </div>
-                        <h3 class="mb-3">Office Hours</h3>
-                        <p>Mon - Fri: 8:00 AM - 5:00 PM <br> Sat: 9:00 AM - 12:00 PM</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+    <section class="ftco-section ftco-no-pt ftco-no-pb contact-section" style="margin-top: 80px;">
         <div class="container-fluid">
             <div class="row d-flex align-items-stretch no-gutters" style="min-height:500px;">
                 <div class="col-md-6 d-flex">
@@ -158,7 +105,7 @@
                         class="card shadow-lg border-0 rounded-lg w-100 d-flex align-items-center justify-content-center">
                         <div class="card-body p-5 w-100">
                             <h3 class="text-center mb-4 text-primary">Get In Touch</h3>
-                            <form action="{{ route('contact.send') }}" method="POST">
+                            <form action="{{ route('contact.store') }}" method="POST">
                                 @csrf
 
                                 @if (session('success'))

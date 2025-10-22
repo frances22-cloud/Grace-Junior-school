@@ -221,29 +221,30 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_1.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/picture-2.jpeg') }})">
+                                </div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>Grace Junior School has transformed my child’s confidence and love for learning.
                                     </p>
-                                    <p class="name">Raymond Odukul</p>
-                                    <span class="position">Father</span>
+                                    <p class="name">Grace Akello</p>
+                                    <span class="position">Mother</span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_2.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/test-1.png') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>The teachers are patient, supportive, and truly care about every student’s
                                         growth.</p>
-                                    <p class="name">Grace Akkello</p>
+                                    <p class="name">Lucy Agero</p>
                                     <span class="position">Mother</span>
                                 </div>
                             </div>
@@ -251,13 +252,28 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_3.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/test-2.png') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>My child enjoys school daily and is developing excellent social skills.</p>
-                                    <p class="name">Mark Felix</p>
+                                    <p class="name">Priscilla</p>
+                                    <span class="position">Mother</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4"
+                                    style="background-image: url({{ asset('frontend/images/tr-1.jpeg') }})"></div>
+                                <div class="text ml-2 bg-light">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                    <p>The school environment is safe and nurturing, giving my child confidence every
+                                        day.</p>
+                                    <p class="name">Amos Brian</p>
                                     <span class="position">Father</span>
                                 </div>
                             </div>
@@ -265,22 +281,7 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_4.jpg') }})"></div>
-                                <div class="text ml-2 bg-light">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                    <p>The school environment is safe and nurturing, giving my child confidence every
-                                        day.</p>
-                                    <p class="name">Rodel Golez</p>
-                                    <span class="position">Mother</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex">
-                                <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/img-4.jpeg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/tr-4.jpeg') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
@@ -346,8 +347,10 @@
                         <h2 class="ftco-heading-2">Contact Information</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad), Ngora District, Uganda</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256 782996567 / +256 788625005</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Orisai (Baghdad),
+                                        Ngora District, Uganda</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
+                                            782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">gjuniororisai@gmail.com</span></a></li>
                             </ul>
@@ -367,20 +370,25 @@
                     <div class="ftco-footer-widget mb-5 ml-md-4">
                         <h2 class="ftco-heading-2">Useful Links</h2>
                         <ul class="list-unstyled">
-                            <li><a href="{{ url('home') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                            <li><a href="{{ url('about') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                            <li><a href="{{ url('gallery') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
+                            <li><a href="{{ url('home') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                            <li><a href="{{ url('about') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+                            <li><a href="{{ url('gallery') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
                             </li>
-                            <li><a href="{{ url('academics') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
+                            <li><a href="{{ url('academics') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
                             </li>
-                            <li><a href="{{ url('contact') }}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+                            <li><a href="{{ url('contact') }}"><span
+                                        class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="ftco-footer-widget mb-5">
-                        <h2 class="ftco-heading-2">Subscribe Us!</h2>
+                        <h2 class="ftco-heading-2">Subscribe!</h2>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <input type="text" class="form-control mb-2 text-center"

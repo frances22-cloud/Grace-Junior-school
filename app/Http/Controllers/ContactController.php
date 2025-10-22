@@ -22,7 +22,7 @@ class ContactController extends Controller
         $contactMessage = ContactMessage::create($validated);
 
         // Send email notification
-        Mail::to('francesayango@strathmore.edu')->send(new ContactMessageReceived($contactMessage));
+        Mail::to('gjschool@creedafrica.org')->send(new ContactMessageReceived($contactMessage));
         return redirect()->back()->with('success', 'Thank you for your message! We will get back to you soon.');
 }
 }

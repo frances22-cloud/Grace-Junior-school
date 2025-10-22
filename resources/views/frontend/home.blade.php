@@ -84,8 +84,8 @@
                 <div class="row no-gutters slider-text align-items-center justify-content-center"
                     data-scrollax-parent="true">
                     <div class="col-md-8 text-center ftco-animate">
-                        <h1 class="mb-4">Children Are The Best <span>Explorers In The World</span></h1>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+                        <h1 class="mb-4">Welcome to Grace <span> Junior School</span></h1>
+                        <p><a href="{{ route('about') }}" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
                     </div>
                 </div>
             </div>
@@ -97,8 +97,9 @@
                 <div class="row no-gutters slider-text align-items-center justify-content-center"
                     data-scrollax-parent="true">
                     <div class="col-md-8 text-center ftco-animate">
-                        <h1 class="mb-4">Perfect Learned<span> For Your Child</span></h1>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3 mt-3">Read More</a></p>
+                        <h1 class="mb-4">Home Of Academics<span> For Your Child</span></h1>
+                        <p><a href="{{ route('academics') }}" class="btn btn-secondary px-4 py-3 mt-3">Read More</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -138,7 +139,7 @@
                             <span class="flaticon-books"></span>
                         </div>
                         <div class="media-body p-2 mt-3">
-                            <h3 class="heading">Book &amp; Library</h3>
+                            <h3 class="heading">Books &amp; Library</h3>
                             <p>A well-stocked library that encourages a culture of reading, research, and knowledge
                                 exploration</p>
                         </div>
@@ -167,22 +168,19 @@
                     <div class="text px-4 ftco-animate">
                         <h2 class="mb-4">Welcome to Grace Junior School</h2>
                         <h5 class="text-muted mb-4"><em>“Shine in Excellence”</em></h5>
-                        <p>Grace Junior School, located in the heart of our community, has been dedicated to nurturing
+                        <p>Grace Junior School, located in the heart of Orisai community, is dedicated to nurturing
                             young learners since 1998. We offer a strong academic curriculum supported by qualified
                             teachers who inspire excellence and character development. Our aim is to provide children
                             with the knowledge, values, and confidence they need to succeed in school and beyond.</p>
                         <p>Alongside academics, we create opportunities for learners to explore their talents through
-                            sports, music, and co-curricular activities. With a safe and supportive environment, a
-                            well-stocked library, and modern learning resources, Grace Junior School continues to be a
-                            place where children grow, discover their potential, and truly shine in excellence.</p>
-                        <p><a href="#" class="btn btn-secondary px-4 py-3">Read More</a></p>
+                            co-curricular activities. </p>
+                        <p><a href="{{ route('academics') }}" class="btn btn-secondary px-4 py-3">Read More</a></p>
 
                     </div>
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
                     <h2 class="mb-4">What We Offer</h2>
-                    <p>At our school, we provide a nurturing environment where every child can learn and grow.
-                        We offer quality education, fun learning activities,
+                    <p>We provide a nurturing environment where every child can learn and grow.
                         and opportunities to develop talents and values that last a lifetime.</p>
                     <div class="row mt-5">
                         <div class="col-lg-6">
@@ -222,8 +220,8 @@
                                 <div class="icon mt-2 mr-3 d-flex justify-content-center align-items-center"><span
                                         class="flaticon-education"></span></div>
                                 <div class="text">
-                                    <h3>Sufficient Classrooms</h3>
-                                    <p>Spacious classrooms with modern furniture and aids foster focused learning daily.
+                                    <h3>Spacious Classrooms</h3>
+                                    <p>With modern furniture and aids foster focused learning daily.
                                     </p>
                                 </div>
                             </div>
@@ -234,7 +232,7 @@
                                         class="flaticon-jigsaw"></span></div>
                                 <div class="text">
                                     <h3>Safe Drinking Water</h3>
-                                    <p>Our school ensures access to clean and safe drinking water, promoting health and
+                                    <p>Ensures access to clean and safe drinking water, promoting health and
                                         well-being for all students..</p>
                                 </div>
                             </div>
@@ -245,7 +243,7 @@
                                         class="flaticon-kids"></span></div>
                                 <div class="text">
                                     <h3>Healthy Meals</h3>
-                                    <p>Our school provides nutritious, balanced meals to support your child’s growth,
+                                    <p>The school provides nutritious, balanced meals to support your child’s growth,
                                         energy, and overall well-being.</p>
                                 </div>
                             </div>
@@ -473,29 +471,29 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_1.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/picture-2.jpeg') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>Grace Junior School has transformed my child’s confidence and love for learning.
                                     </p>
-                                    <p class="name">Raymond Odukul</p>
-                                    <span class="position">Father</span>
+                                    <p class="name">Grace Akello</p>
+                                    <span class="position">Mother</span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_2.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/test-1.png') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>The teachers are patient, supportive, and truly care about every student’s
                                         growth.</p>
-                                    <p class="name">Grace Akkello</p>
+                                    <p class="name">Lucy Agero</p>
                                     <span class="position">Mother</span>
                                 </div>
                             </div>
@@ -503,13 +501,28 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_3.jpg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/test-2.png') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                     <p>My child enjoys school daily and is developing excellent social skills.</p>
-                                    <p class="name">Mark Felix</p>
+                                    <p class="name">Priscilla</p>
+                                    <span class="position">Mother</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex">
+                                <div class="user-img mr-4"
+                                    style="background-image: url({{ asset('frontend/images/tr-1.jpeg') }})"></div>
+                                <div class="text ml-2 bg-light">
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                    <p>The school environment is safe and nurturing, giving my child confidence every
+                                        day.</p>
+                                    <p class="name">Amos Brian</p>
                                     <span class="position">Father</span>
                                 </div>
                             </div>
@@ -517,22 +530,7 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/person_4.jpg') }})"></div>
-                                <div class="text ml-2 bg-light">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                    <p>The school environment is safe and nurturing, giving my child confidence every
-                                        day.</p>
-                                    <p class="name">Rodel Golez</p>
-                                    <span class="position">Mother</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex">
-                                <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/img-4.jpeg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/tr-4.jpeg') }})"></div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
@@ -595,7 +593,7 @@
             <div class="row justify-content-center mb-5 pb-2">
                 <div class="col-md-8 text-center heading-section ftco-animate">
                     <h2 class="mb-2"><span>Our</span> Clubs</h2>
-                    <p>Students at Grace Junior School can join these clubs to develop skills and explore interests.</p>
+                    <p>Students at Grace Junior School can join clubs to develop skills and explore interests.</p>
                 </div>
             </div>
             <div class="row">
@@ -730,7 +728,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p>Copyright &copy;
