@@ -41,7 +41,7 @@
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span
                                     class="icon-paper-plane"></span></div>
-                            <span class="text">gjuniororisai@gmail.com</span>
+                            <span class="text">gjschool@creedafrica.org</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
                             <div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span
@@ -471,7 +471,8 @@
                         <div class="item">
                             <div class="testimony-wrap d-flex">
                                 <div class="user-img mr-4"
-                                    style="background-image: url({{ asset('frontend/images/picture-2.jpeg') }})"></div>
+                                    style="background-image: url({{ asset('frontend/images/picture-2.jpeg') }})">
+                                </div>
                                 <div class="text ml-2 bg-light">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
@@ -673,7 +674,7 @@
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
                                             782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">gjuniororisai@gmail.com</span></a></li>
+                                            class="text">gjschool@creedafrica.org</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -693,17 +694,22 @@
                         <ul class="list-unstyled">
                             <li><a href="{{ url('home') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+
                             <li><a href="{{ url('about') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
+
                             <li><a href="{{ url('gallery') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a>
                             </li>
+
                             <li><a href="{{ url('academics') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Academics</a>
                             </li>
+
                             <li><a href="{{ url('contact') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
                             </li>
+
                         </ul>
                     </div>
                 </div>
