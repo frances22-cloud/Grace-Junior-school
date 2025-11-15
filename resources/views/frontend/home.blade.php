@@ -709,7 +709,6 @@
                             <li><a href="{{ url('contact') }}"><span
                                         class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
