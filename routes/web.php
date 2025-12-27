@@ -23,4 +23,4 @@ Route::get('/gallery', function () {
     return view('frontend.gallery');
 })->name('gallery');
 
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');    
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
