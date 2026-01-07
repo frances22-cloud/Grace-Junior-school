@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/creedafr/public_html/gracejunior.creedafrica.org
-    - /bin/cp -R * $DEPLOYPATH git add .cpanel.yml
+    - /bin/cp -R * $DEPLOYPATH
+    - chmod -R 755 $DEPLOYPATH/storage
+    - chmod -R 755 $DEPLOYPATH/bootstrap/cache
