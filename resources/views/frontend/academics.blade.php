@@ -75,7 +75,7 @@
     <!-- END nav -->
 
     <section class="hero-wrap hero-wrap-2"
-        style="background-image: url('{{ asset('frontend/images/pupils-4.jpeg') }}');">
+        style="background-image: url('{{ asset('frontend/images/image8.jpeg') }}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -107,7 +107,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img3.jpeg') }}');">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/image7.jpeg') }}');">
                     </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Mathematics</a></h3>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img2.jpeg') }}');">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/image6.jpeg') }}');">
                     </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">English Language</a></h3>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-7.jpeg') }}');">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/image4.jpeg') }}');">
                     </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Science</a></h3>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-4.jpeg') }}');">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/img-12.jpeg') }}');">
                     </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Social Studies</a></h3>
@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 course d-lg-flex ftco-animate">
-                    <div class="img" style="background-image: url('{{ asset('frontend/images/image1.jpeg') }}');">
+                    <div class="img" style="background-image: url('{{ asset('frontend/images/pe.jpeg') }}');">
                     </div>
                     <div class="text bg-light p-4">
                         <h3><a href="#">Physical Education</a></h3>
@@ -237,8 +237,8 @@
                         <h4><span class="icon-clock-o mr-2"></span>School Hours</h4>
                         <p class="mb-2"><strong>Morning Assembly:</strong> 7:30 AM</p>
                         <p class="mb-2"><strong>Classes Begin:</strong> 8:00 AM</p>
-                        <p class="mb-2"><strong>Lunch Break:</strong> 12:30 PM - 1:30 PM</p>
-                        <p class="mb-2"><strong>Dismissal:</strong> 4:00 PM</p>
+                        <p class="mb-2"><strong>Lunch Break:</strong> 1:00 PM - 2:00 PM</p>
+                        <p class="mb-2"><strong>Dismissal:</strong> 5:00 PM</p>
                     </div>
                 </div>
                 <div class="col-md-6 ftco-animate">

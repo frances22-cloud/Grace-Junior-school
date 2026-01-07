@@ -75,7 +75,7 @@
         </div>
     </nav>
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('frontend/images/img-8.jpeg') }}');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('frontend/images/image2.jpeg') }}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -101,9 +101,9 @@
             <div class="row">
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/img3.jpeg') }}"
+                        <a href="{{ asset('frontend/images/lab1.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img3.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/lab1.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -113,9 +113,9 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/img2.jpeg') }}"
+                        <a href="{{ asset('frontend/images/pupils-2.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img2.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/pupils-2.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -125,9 +125,9 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/img-7.jpeg') }}"
+                        <a href="{{ asset('frontend/images/pupils-1.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img-7.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/pupils-1.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -137,9 +137,9 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/img-4.jpeg') }}"
+                        <a href="{{ asset('frontend/images/image6.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img-4.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/image6.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -149,9 +149,9 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/image1.jpeg') }}"
+                        <a href="{{ asset('frontend/images/pupil5.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/image1.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/pupil5.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -175,7 +175,7 @@
                     <div class="gallery-item mb-4">
                         <a href="{{ asset('frontend/images/image3.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/image3.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/image7.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -185,9 +185,9 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="gallery-item mb-4">
-                        <a href="{{ asset('frontend/images/img-1.jpeg') }}"
+                        <a href="{{ asset('frontend/images/image6.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img-1.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/img-10.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -199,7 +199,7 @@
                     <div class="gallery-item mb-4">
                         <a href="{{ asset('frontend/images/img-8.jpeg') }}"
                             class="image-popup img d-flex align-items-center"
-                            style="background-image: url('{{ asset('frontend/images/img-8.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
+                            style="background-image: url('{{ asset('frontend/images/image4.jpeg') }}'); height: 300px; background-size: cover; background-position: center;">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="icon-search"></span>
                             </div>
@@ -223,7 +223,7 @@
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+256
                                             782996567 / +256 788625005</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">gjuniororisai@gmail.com</span></a></li>
+                                            class="text">gjschool@creedafrica.org</span></a></li>
                             </ul>
                         </div>
                     </div>
